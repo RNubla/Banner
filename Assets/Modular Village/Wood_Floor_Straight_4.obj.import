@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Wood_Floor_Straight_4.obj-1183157ed921f6d355c47c9016f5cdcc.mesh"
+
+[deps]
+
+files=[ "res://.import/Wood_Floor_Straight_4.obj-1183157ed921f6d355c47c9016f5cdcc.mesh" ]
+
+source_file="res://Assets/Modular Village/Wood_Floor_Straight_4.obj"
+dest_files=[ "res://.import/Wood_Floor_Straight_4.obj-1183157ed921f6d355c47c9016f5cdcc.mesh", "res://.import/Wood_Floor_Straight_4.obj-1183157ed921f6d355c47c9016f5cdcc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

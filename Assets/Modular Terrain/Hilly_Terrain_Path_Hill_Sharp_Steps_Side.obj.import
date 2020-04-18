@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hilly_Terrain_Path_Hill_Sharp_Steps_Side.obj-ab0c5b9124286aed17cada55b8b365ea.mesh"
+
+[deps]
+
+files=[ "res://.import/Hilly_Terrain_Path_Hill_Sharp_Steps_Side.obj-ab0c5b9124286aed17cada55b8b365ea.mesh" ]
+
+source_file="res://Assets/Modular Terrain/Hilly_Terrain_Path_Hill_Sharp_Steps_Side.obj"
+dest_files=[ "res://.import/Hilly_Terrain_Path_Hill_Sharp_Steps_Side.obj-ab0c5b9124286aed17cada55b8b365ea.mesh", "res://.import/Hilly_Terrain_Path_Hill_Sharp_Steps_Side.obj-ab0c5b9124286aed17cada55b8b365ea.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

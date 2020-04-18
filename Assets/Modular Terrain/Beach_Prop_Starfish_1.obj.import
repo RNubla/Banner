@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Beach_Prop_Starfish_1.obj-95334162b53a33e4f53426fe342e6ccf.mesh"
+
+[deps]
+
+files=[ "res://.import/Beach_Prop_Starfish_1.obj-95334162b53a33e4f53426fe342e6ccf.mesh" ]
+
+source_file="res://Assets/Modular Terrain/Beach_Prop_Starfish_1.obj"
+dest_files=[ "res://.import/Beach_Prop_Starfish_1.obj-95334162b53a33e4f53426fe342e6ccf.mesh", "res://.import/Beach_Prop_Starfish_1.obj-95334162b53a33e4f53426fe342e6ccf.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

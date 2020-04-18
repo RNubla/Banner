@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hilly_Prop_Tree_Cedar_2.obj-2184e3f62f72ded65184bb07fcafe02a.mesh"
+
+[deps]
+
+files=[ "res://.import/Hilly_Prop_Tree_Cedar_2.obj-2184e3f62f72ded65184bb07fcafe02a.mesh" ]
+
+source_file="res://Assets/Modular Terrain/Hilly_Prop_Tree_Cedar_2.obj"
+dest_files=[ "res://.import/Hilly_Prop_Tree_Cedar_2.obj-2184e3f62f72ded65184bb07fcafe02a.mesh", "res://.import/Hilly_Prop_Tree_Cedar_2.obj-2184e3f62f72ded65184bb07fcafe02a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

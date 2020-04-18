@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Well_Cobblestone.obj-62bcdade4541892520ad88d591d0221a.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Well_Cobblestone.obj-62bcdade4541892520ad88d591d0221a.mesh" ]
+
+source_file="res://Assets/Modular Village/Prop_Well_Cobblestone.obj"
+dest_files=[ "res://.import/Prop_Well_Cobblestone.obj-62bcdade4541892520ad88d591d0221a.mesh", "res://.import/Prop_Well_Cobblestone.obj-62bcdade4541892520ad88d591d0221a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

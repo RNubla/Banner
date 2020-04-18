@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cave_Prop_Hanging_Cables_1.obj-00793dad42fb9736375daa372946c090.mesh"
+
+[deps]
+
+files=[ "res://.import/Cave_Prop_Hanging_Cables_1.obj-00793dad42fb9736375daa372946c090.mesh" ]
+
+source_file="res://Assets/Modular Terrain/Cave_Prop_Hanging_Cables_1.obj"
+dest_files=[ "res://.import/Cave_Prop_Hanging_Cables_1.obj-00793dad42fb9736375daa372946c090.mesh", "res://.import/Cave_Prop_Hanging_Cables_1.obj-00793dad42fb9736375daa372946c090.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

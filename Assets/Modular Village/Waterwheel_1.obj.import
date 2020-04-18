@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Waterwheel_1.obj-220de044cd7b5779b9b7d38b222c7cbd.mesh"
+
+[deps]
+
+files=[ "res://.import/Waterwheel_1.obj-220de044cd7b5779b9b7d38b222c7cbd.mesh" ]
+
+source_file="res://Assets/Modular Village/Waterwheel_1.obj"
+dest_files=[ "res://.import/Waterwheel_1.obj-220de044cd7b5779b9b7d38b222c7cbd.mesh", "res://.import/Waterwheel_1.obj-220de044cd7b5779b9b7d38b222c7cbd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

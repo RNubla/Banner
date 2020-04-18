@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Broom.obj-4f95705924259826ddd2567364115f61.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Broom.obj-4f95705924259826ddd2567364115f61.mesh" ]
+
+source_file="res://Assets/Modular Village/Prop_Broom.obj"
+dest_files=[ "res://.import/Prop_Broom.obj-4f95705924259826ddd2567364115f61.mesh", "res://.import/Prop_Broom.obj-4f95705924259826ddd2567364115f61.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

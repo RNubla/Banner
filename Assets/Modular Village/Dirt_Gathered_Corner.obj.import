@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Dirt_Gathered_Corner.obj-c587f798c32cf3cff2beaead51a821a9.mesh"
+
+[deps]
+
+files=[ "res://.import/Dirt_Gathered_Corner.obj-c587f798c32cf3cff2beaead51a821a9.mesh" ]
+
+source_file="res://Assets/Modular Village/Dirt_Gathered_Corner.obj"
+dest_files=[ "res://.import/Dirt_Gathered_Corner.obj-c587f798c32cf3cff2beaead51a821a9.mesh", "res://.import/Dirt_Gathered_Corner.obj-c587f798c32cf3cff2beaead51a821a9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

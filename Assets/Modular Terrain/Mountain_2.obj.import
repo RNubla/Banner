@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Mountain_2.obj-7580496733fecde8e14211536cf605cc.mesh"
+
+[deps]
+
+files=[ "res://.import/Mountain_2.obj-7580496733fecde8e14211536cf605cc.mesh" ]
+
+source_file="res://Assets/Modular Terrain/Mountain_2.obj"
+dest_files=[ "res://.import/Mountain_2.obj-7580496733fecde8e14211536cf605cc.mesh", "res://.import/Mountain_2.obj-7580496733fecde8e14211536cf605cc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

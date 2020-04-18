@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cave_Prop_Pick_Small.obj-c6f04360cea6f0e4771ac7f9e0922e6f.mesh"
+
+[deps]
+
+files=[ "res://.import/Cave_Prop_Pick_Small.obj-c6f04360cea6f0e4771ac7f9e0922e6f.mesh" ]
+
+source_file="res://Assets/Modular Terrain/Cave_Prop_Pick_Small.obj"
+dest_files=[ "res://.import/Cave_Prop_Pick_Small.obj-c6f04360cea6f0e4771ac7f9e0922e6f.mesh", "res://.import/Cave_Prop_Pick_Small.obj-c6f04360cea6f0e4771ac7f9e0922e6f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

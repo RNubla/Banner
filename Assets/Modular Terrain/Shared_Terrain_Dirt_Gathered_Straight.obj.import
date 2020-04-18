@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Shared_Terrain_Dirt_Gathered_Straight.obj-9ff712777ee5ce710778751ae5467462.mesh"
+
+[deps]
+
+files=[ "res://.import/Shared_Terrain_Dirt_Gathered_Straight.obj-9ff712777ee5ce710778751ae5467462.mesh" ]
+
+source_file="res://Assets/Modular Terrain/Shared_Terrain_Dirt_Gathered_Straight.obj"
+dest_files=[ "res://.import/Shared_Terrain_Dirt_Gathered_Straight.obj-9ff712777ee5ce710778751ae5467462.mesh", "res://.import/Shared_Terrain_Dirt_Gathered_Straight.obj-9ff712777ee5ce710778751ae5467462.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

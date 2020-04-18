@@ -1,0 +1,2648 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Assets/Modular Village/Stone_Wall_2.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Modular Village/Stone_Wall_3.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Assets/Modular Village/Stone_Wall_1.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://Assets/Modular Village/Stone_Wall_4.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://Assets/Modular Village/Stone_Wall_5.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://Assets/Modular Village/Stone_Pillar_Base.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Assets/Modular Village/Stone_Pillar.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Assets/Modular Village/Stucco_Window_Single_Narrow.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Assets/Modular Village/Stone_Floor_2.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Assets/Modular Village/Stone_Doorway_Wide_Tall_2.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Assets/Modular Village/Stone_Floor_1.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://Assets/Modular Village/Prop_Barrel_1.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://Assets/Modular Village/Prop_Barrel_1_Open.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Assets/Modular Village/Prop_Barrel_2.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://Assets/Modular Village/Wall_Prop_Door_Simple.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://Assets/Modular Village/Wall_Prop_Sign_1.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://Assets/Modular Village/Stucco_Block.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://Assets/Modular Village/Stucco_Prop_Support_Beam_3.obj" type="ArrayMesh" id=18]
+[ext_resource path="res://Assets/Modular Village/Stucco_Prop_Support_Beam_2.obj" type="ArrayMesh" id=19]
+[ext_resource path="res://Assets/Modular Village/Stucco_Prop_Support_Beam_1.obj" type="ArrayMesh" id=20]
+[ext_resource path="res://Assets/Modular Village/Stucco_Window_Double_Wide_Tall.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Assets/Modular Village/Stucco_Prop_Support_Pillar_1.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Assets/Modular Village/Stucco_Prop_Support_Pillar_2.obj" type="ArrayMesh" id=23]
+[ext_resource path="res://Assets/Modular Village/Stucco_Prop_Support_Angled_Large.obj" type="ArrayMesh" id=24]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 2.6, 2.1, 2.6 )
+
+[node name="Building" type="Spatial"]
+
+[node name="Walls - Building" type="Spatial" parent="."]
+
+[node name="Wall Props" type="Spatial" parent="Walls - Building"]
+
+[node name="First Floor" type="Spatial" parent="Walls - Building/Wall Props"]
+
+[node name="Wall" type="Spatial" parent="Walls - Building/Wall Props/First Floor"]
+
+[node name="1x4 Stucco2" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall"]
+
+[node name="Stucco_Block" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/1x4 Stucco2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block2" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/1x4 Stucco2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, -2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block3" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/1x4 Stucco2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, -2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block4" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/1x4 Stucco2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, -2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="1x4 Stucco" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Block" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/1x4 Stucco"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 0 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block2" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/1x4 Stucco"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, 0 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block3" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/1x4 Stucco"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, 0 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block4" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/1x4 Stucco"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, 0 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="1x3 Stucco3" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 1, 3 )
+
+[node name="Stucco_Block" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/1x3 Stucco3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block2" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/1x3 Stucco3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block3" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/1x3 Stucco3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stone" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall"]
+
+[node name="Walls" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall/Stone"]
+
+[node name="Stone_Wall_1" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+
+[node name="Stone_Wall_2" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+
+[node name="Stone_Wall_5" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+
+[node name="Walls2" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall/Stone"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3, 0, 3 )
+
+[node name="Stone_Wall_3" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+
+[node name="Stone_Wall_4" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls2"]
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+
+[node name="Stone_Wall_1" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+
+[node name="Stone_Wall_2" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+
+[node name="Stone_Wall_5" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+
+[node name="Walls3" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall/Stone"]
+transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -6, 0, -8.74228e-08 )
+
+[node name="Stone_Wall_3" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+
+[node name="Stone_Wall_4" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls3"]
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+
+[node name="Stone_Wall_1" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+
+[node name="Stone_Wall_2" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+
+[node name="Stone_Wall_5" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+
+[node name="Walls4" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall/Stone"]
+transform = Transform( 1.94707e-07, 0, 1, 0, 1, 0, -1, 0, 1.94707e-07, -3, 0, -3 )
+
+[node name="Stone_Wall_3" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+
+[node name="Stone_Wall_4" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls4"]
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+
+[node name="Stone_Wall_1" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+
+[node name="Stone_Wall_2" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+
+[node name="Stone_Wall_5" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Stone/Walls4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+
+[node name="Support Beam- Front" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Front"]
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Beam_4" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Front"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Beam_2" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Front"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 19 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Stucco_Prop_Support_Beam_5" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Front"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 19 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Front"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Support Beam- Left" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 2, -3 )
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Left"]
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Beam_4" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Left"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Beam_2" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Left"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 19 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Stucco_Prop_Support_Beam_5" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Left"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 19 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Left"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Support Beam- Back" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -6, 2, 7.15256e-07 )
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Back"]
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Beam_4" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Back"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Beam_2" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Back"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 19 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Stucco_Prop_Support_Beam_5" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Back"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 19 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Back"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Support Beam- Right" type="Spatial" parent="Walls - Building/Wall Props/First Floor/Wall"]
+transform = Transform( 1.94707e-07, 0, -1, 0, 1, 0, 1, 0, 1.94707e-07, -3, 2, 3 )
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Right"]
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Beam_4" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Right"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Beam_2" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Right"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 19 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Stucco_Prop_Support_Beam_5" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Right"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 19 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/First Floor/Wall/Support Beam- Right"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Second Floor" type="Spatial" parent="Walls - Building/Wall Props"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+
+[node name="Wall" type="Spatial" parent="Walls - Building/Wall Props/Second Floor"]
+
+[node name="Stucco Layer 1" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Wall"]
+
+[node name="Stucco" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1"]
+
+[node name="Stucco_Block" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco3" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1, 0, 3 )
+
+[node name="Stucco_Block" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco4" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1"]
+transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -6, 0, 3 )
+
+[node name="Stucco_Block" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block4" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 4 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco5" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1"]
+transform = Transform( 1.94707e-07, 0, 1, 0, 1, 0, -1, 0, 1.94707e-07, -6, 0, -3 )
+
+[node name="Stucco_Block" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block4" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 1/Stucco5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 4 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco Layer 2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+
+[node name="Stucco" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2"]
+
+[node name="Stucco_Block" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco3" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1, 0, 3 )
+
+[node name="Stucco_Block" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco4" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2"]
+transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -6, 0, 3 )
+
+[node name="Stucco_Block" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block4" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 4 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco5" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2"]
+transform = Transform( 1.94707e-07, 0, 1, 0, 1, 0, -1, 0, 1.94707e-07, -6, 0, -3 )
+
+[node name="Stucco_Block" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Stucco_Block4" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Wall/Stucco Layer 2/Stucco5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 4 )
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Beams" type="Spatial" parent="Walls - Building/Wall Props/Second Floor"]
+
+[node name="Pillars" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams"]
+
+[node name="Beam Pillar" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Pillar2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar2"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Pillar3" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3 )
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar3"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Pillar4" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar4"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Pillar5" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, 3 )
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar5"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Pillar6" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 0, 3 )
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar6"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Pillar7" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -6, 0, 3 )
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar7"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Pillar8" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -6, 0, 1 )
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar8"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Pillar9" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -6, 0, -1 )
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar9"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Pillar10" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+transform = Transform( 1.94707e-07, 0, 1, 0, 1, 0, -1, 0, 1.94707e-07, -6, 0, -3 )
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar10"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar10"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Pillar11" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+transform = Transform( 1.94707e-07, 0, 1, 0, 1, 0, -1, 0, 1.94707e-07, -4, 0, -3 )
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar11"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar11"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Pillar12" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars"]
+transform = Transform( 1.94707e-07, 0, 1, 0, 1, 0, -1, 0, 1.94707e-07, -2, 0, -3 )
+
+[node name="Stucco_Prop_Support_Pillar_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar12"]
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Pillar_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Pillars/Beam Pillar12"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Design" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams"]
+
+[node name="Beam Design" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design"]
+
+[node name="Angled Beam - Large" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design/Angled Beam - Large"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design/Angled Beam - Large"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Angled Beam - Large2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design"]
+transform = Transform( 1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design/Angled Beam - Large2"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design/Angled Beam - Large2"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Beam Support" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design/Beam Support"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design/Beam Support"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Support2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design/Beam Support2"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design/Beam Support2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Beam_4" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design/Beam Support2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design/Beam Support2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Design3" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.37114e-08, 0, 3 )
+
+[node name="Angled Beam - Large" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3/Angled Beam - Large"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3/Angled Beam - Large"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Angled Beam - Large2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3"]
+transform = Transform( 1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3/Angled Beam - Large2"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3/Angled Beam - Large2"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Beam Support" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3/Beam Support"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3/Beam Support"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Support2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3/Beam Support2"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design3/Beam Support2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Design4" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, 3 )
+
+[node name="Angled Beam - Large" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4/Angled Beam - Large"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4/Angled Beam - Large"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Angled Beam - Large2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4"]
+transform = Transform( 1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4/Angled Beam - Large2"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4/Angled Beam - Large2"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Beam Support" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4/Beam Support"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4/Beam Support"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Support2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4/Beam Support2"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design4/Beam Support2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Design6" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design"]
+transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -6, 0, 3 )
+
+[node name="Angled Beam - Large" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6/Angled Beam - Large"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6/Angled Beam - Large"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Angled Beam - Large2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6"]
+transform = Transform( 1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6/Angled Beam - Large2"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6/Angled Beam - Large2"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Beam Support" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6/Beam Support"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6/Beam Support"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Support2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6/Beam Support2"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design6/Beam Support2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Design7" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design"]
+transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -6, 0, 1 )
+
+[node name="Angled Beam - Large" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7/Angled Beam - Large"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7/Angled Beam - Large"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Angled Beam - Large2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7"]
+transform = Transform( 1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7/Angled Beam - Large2"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7/Angled Beam - Large2"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Beam Support" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7/Beam Support"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7/Beam Support"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Support2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7/Beam Support2"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design7/Beam Support2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Design9" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design"]
+transform = Transform( 1.94707e-07, 0, 1, 0, 1, 0, -1, 0, 1.94707e-07, -6, 0, -3 )
+
+[node name="Angled Beam - Large" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9/Angled Beam - Large"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9/Angled Beam - Large"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Angled Beam - Large2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9"]
+transform = Transform( 1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9/Angled Beam - Large2"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9/Angled Beam - Large2"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Beam Support" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9/Beam Support"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9/Beam Support"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Support2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9/Beam Support2"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design9/Beam Support2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Design10" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design"]
+transform = Transform( 1.94707e-07, 0, 1, 0, 1, 0, -1, 0, 1.94707e-07, -4, 0, -3 )
+
+[node name="Angled Beam - Large" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10/Angled Beam - Large"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10/Angled Beam - Large"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Angled Beam - Large2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10"]
+transform = Transform( 1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10/Angled Beam - Large2"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10/Angled Beam - Large2"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Beam Support" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10/Beam Support"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10/Beam Support"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Support2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10/Beam Support2"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design10/Beam Support2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Design5" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 0, 3 )
+
+[node name="Angled Beam - Large" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design5/Angled Beam - Large"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Angled Beam - Large2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design5"]
+transform = Transform( 1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design5/Angled Beam - Large2"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Beam Support" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design5/Beam Support"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Support2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design5/Beam Support2"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Design8" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design"]
+transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -6, 0, -1 )
+
+[node name="Angled Beam - Large" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design8/Angled Beam - Large"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Angled Beam - Large2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design8"]
+transform = Transform( 1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design8/Angled Beam - Large2"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Beam Support" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design8/Beam Support"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Support2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design8/Beam Support2"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Design11" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design"]
+transform = Transform( 1.94707e-07, 0, 1, 0, 1, 0, -1, 0, 1.94707e-07, -2, 0, -3 )
+
+[node name="Angled Beam - Large" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design11"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design11/Angled Beam - Large"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Angled Beam - Large2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design11"]
+transform = Transform( 1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design11/Angled Beam - Large2"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Beam Support" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design11"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design11/Beam Support"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Support2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design11"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Beam_3" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design11/Beam Support2"]
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Beam Design2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4 )
+
+[node name="Angled Beam - Large" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="Stucco_Prop_Support_Angled_Large" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design2/Angled Beam - Large"]
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Angled Beam - Large2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design2"]
+transform = Transform( 1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Angled_Large2" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design2/Angled Beam - Large2"]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1, 0, -1 )
+mesh = ExtResource( 24 )
+material/0 = null
+
+[node name="Beam Support" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design2/Beam Support"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Beam Support2" type="Spatial" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1 )
+
+[node name="Stucco_Prop_Support_Beam_1" type="MeshInstance" parent="Walls - Building/Wall Props/Second Floor/Beams/Design/Beam Design2/Beam Support2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Stone_Doorway_Wide_Tall_2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+material/42 = null
+material/43 = null
+material/44 = null
+material/45 = null
+material/46 = null
+material/47 = null
+material/48 = null
+material/49 = null
+material/50 = null
+material/51 = null
+material/52 = null
+material/53 = null
+material/54 = null
+material/55 = null
+material/56 = null
+material/57 = null
+material/58 = null
+material/59 = null
+material/60 = null
+material/61 = null
+material/62 = null
+material/63 = null
+material/64 = null
+material/65 = null
+material/66 = null
+material/67 = null
+material/68 = null
+material/69 = null
+material/70 = null
+material/71 = null
+material/72 = null
+material/73 = null
+material/74 = null
+material/75 = null
+material/76 = null
+material/77 = null
+material/78 = null
+material/79 = null
+material/80 = null
+material/81 = null
+material/82 = null
+material/83 = null
+material/84 = null
+material/85 = null
+material/86 = null
+material/87 = null
+material/88 = null
+material/89 = null
+material/90 = null
+material/91 = null
+material/92 = null
+
+[node name="Wall_Prop_Door_Simple" type="MeshInstance" parent="Stone_Doorway_Wide_Tall_2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5 )
+mesh = ExtResource( 15 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Wall_Prop_Sign_1" type="MeshInstance" parent="Stone_Doorway_Wide_Tall_2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 1.9, 1.5 )
+mesh = ExtResource( 16 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Windows" type="Spatial" parent="."]
+
+[node name="First Floor" type="Spatial" parent="Windows"]
+
+[node name="Stucco_Window_Single_Narrow" type="MeshInstance" parent="Windows/First Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 1 )
+mesh = ExtResource( 8 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Stucco_Window_Single_Narrow2" type="MeshInstance" parent="Windows/First Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 2 )
+mesh = ExtResource( 8 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Stucco_Window_Single_Narrow3" type="MeshInstance" parent="Windows/First Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, -2 )
+mesh = ExtResource( 8 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Second Floor" type="Spatial" parent="Windows"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, -1 )
+
+[node name="Stucco_Window_Double_Wide_Tall" type="MeshInstance" parent="Windows/Second Floor"]
+mesh = ExtResource( 21 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Pillars" type="Spatial" parent="."]
+
+[node name="Stone_Pillar_Base" type="MeshInstance" parent="Pillars"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="Stone_Pillar" type="MeshInstance" parent="Pillars/Stone_Pillar_Base"]
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar2" type="MeshInstance" parent="Pillars/Stone_Pillar_Base"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar3" type="MeshInstance" parent="Pillars/Stone_Pillar_Base"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar_Base4" type="MeshInstance" parent="Pillars"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.9 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="Stone_Pillar" type="MeshInstance" parent="Pillars/Stone_Pillar_Base4"]
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar2" type="MeshInstance" parent="Pillars/Stone_Pillar_Base4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar3" type="MeshInstance" parent="Pillars/Stone_Pillar_Base4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar_Base2" type="MeshInstance" parent="Pillars"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.1 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="Stone_Pillar" type="MeshInstance" parent="Pillars/Stone_Pillar_Base2"]
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar2" type="MeshInstance" parent="Pillars/Stone_Pillar_Base2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar3" type="MeshInstance" parent="Pillars/Stone_Pillar_Base2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar_Base3" type="MeshInstance" parent="Pillars"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="Stone_Pillar" type="MeshInstance" parent="Pillars/Stone_Pillar_Base3"]
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar2" type="MeshInstance" parent="Pillars/Stone_Pillar_Base3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar3" type="MeshInstance" parent="Pillars/Stone_Pillar_Base3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar_Base5" type="MeshInstance" parent="Pillars"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -3 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="Stone_Pillar" type="MeshInstance" parent="Pillars/Stone_Pillar_Base5"]
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar2" type="MeshInstance" parent="Pillars/Stone_Pillar_Base5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar3" type="MeshInstance" parent="Pillars/Stone_Pillar_Base5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar_Base6" type="MeshInstance" parent="Pillars"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 2 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="Stone_Pillar" type="MeshInstance" parent="Pillars/Stone_Pillar_Base6"]
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar2" type="MeshInstance" parent="Pillars/Stone_Pillar_Base6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Stone_Pillar3" type="MeshInstance" parent="Pillars/Stone_Pillar_Base6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="Floor" type="Spatial" parent="."]
+
+[node name="Stone" type="Spatial" parent="Floor"]
+
+[node name="Stone_Floor_1" type="MeshInstance" parent="Floor/Stone"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_4" type="MeshInstance" parent="Floor/Stone"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_2" type="MeshInstance" parent="Floor/Stone"]
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_5" type="MeshInstance" parent="Floor/Stone"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_3" type="MeshInstance" parent="Floor/Stone"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone2" type="Spatial" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+
+[node name="Stone_Floor_1" type="MeshInstance" parent="Floor/Stone2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_4" type="MeshInstance" parent="Floor/Stone2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_2" type="MeshInstance" parent="Floor/Stone2"]
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_5" type="MeshInstance" parent="Floor/Stone2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_3" type="MeshInstance" parent="Floor/Stone2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone4" type="Spatial" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
+
+[node name="Stone_Floor_1" type="MeshInstance" parent="Floor/Stone4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_4" type="MeshInstance" parent="Floor/Stone4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_2" type="MeshInstance" parent="Floor/Stone4"]
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_5" type="MeshInstance" parent="Floor/Stone4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_3" type="MeshInstance" parent="Floor/Stone4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone3" type="Spatial" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="Stone_Floor_1" type="MeshInstance" parent="Floor/Stone3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_4" type="MeshInstance" parent="Floor/Stone3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_2" type="MeshInstance" parent="Floor/Stone3"]
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_5" type="MeshInstance" parent="Floor/Stone3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_3" type="MeshInstance" parent="Floor/Stone3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone6" type="Spatial" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+
+[node name="Stone_Floor_1" type="MeshInstance" parent="Floor/Stone6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_4" type="MeshInstance" parent="Floor/Stone6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_2" type="MeshInstance" parent="Floor/Stone6"]
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_5" type="MeshInstance" parent="Floor/Stone6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_3" type="MeshInstance" parent="Floor/Stone6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone5" type="Spatial" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0 )
+
+[node name="Stone_Floor_1" type="MeshInstance" parent="Floor/Stone5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_4" type="MeshInstance" parent="Floor/Stone5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_2" type="MeshInstance" parent="Floor/Stone5"]
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_5" type="MeshInstance" parent="Floor/Stone5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_3" type="MeshInstance" parent="Floor/Stone5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone8" type="Spatial" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0 )
+
+[node name="Stone_Floor_1" type="MeshInstance" parent="Floor/Stone8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_4" type="MeshInstance" parent="Floor/Stone8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_2" type="MeshInstance" parent="Floor/Stone8"]
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_5" type="MeshInstance" parent="Floor/Stone8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_3" type="MeshInstance" parent="Floor/Stone8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone7" type="Spatial" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0 )
+
+[node name="Stone_Floor_1" type="MeshInstance" parent="Floor/Stone7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_4" type="MeshInstance" parent="Floor/Stone7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Stone_Floor_2" type="MeshInstance" parent="Floor/Stone7"]
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_5" type="MeshInstance" parent="Floor/Stone7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Stone_Floor_3" type="MeshInstance" parent="Floor/Stone7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Props" type="Spatial" parent="Floor"]
+
+[node name="Barrels" type="Spatial" parent="Floor/Props"]
+
+[node name="Prop_Barrel_2" type="MeshInstance" parent="Floor/Props/Barrels"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.423803, 0.0203625, 0.862882 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+
+[node name="Prop_Barrel_1" type="MeshInstance" parent="Floor/Props/Barrels"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0292629, 0.00616765, 0.581046 )
+mesh = ExtResource( 12 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+
+[node name="Prop_Barrel_1_Open" type="MeshInstance" parent="Floor/Props/Barrels"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 13 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+material/42 = null
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 1 )

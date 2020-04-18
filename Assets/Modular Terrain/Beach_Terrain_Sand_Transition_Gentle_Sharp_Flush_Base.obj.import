@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Beach_Terrain_Sand_Transition_Gentle_Sharp_Flush_Base.obj-18d7d3d0a36e7c83ec7ed7511208315b.mesh"
+
+[deps]
+
+files=[ "res://.import/Beach_Terrain_Sand_Transition_Gentle_Sharp_Flush_Base.obj-18d7d3d0a36e7c83ec7ed7511208315b.mesh" ]
+
+source_file="res://Assets/Modular Terrain/Beach_Terrain_Sand_Transition_Gentle_Sharp_Flush_Base.obj"
+dest_files=[ "res://.import/Beach_Terrain_Sand_Transition_Gentle_Sharp_Flush_Base.obj-18d7d3d0a36e7c83ec7ed7511208315b.mesh", "res://.import/Beach_Terrain_Sand_Transition_Gentle_Sharp_Flush_Base.obj-18d7d3d0a36e7c83ec7ed7511208315b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

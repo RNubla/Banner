@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Kit_Window_Upper_Straight.obj-b8dcfafb18a9a9197426b3524431b354.mesh"
+
+[deps]
+
+files=[ "res://.import/Kit_Window_Upper_Straight.obj-b8dcfafb18a9a9197426b3524431b354.mesh" ]
+
+source_file="res://Assets/Modular Village/Kit_Window_Upper_Straight.obj"
+dest_files=[ "res://.import/Kit_Window_Upper_Straight.obj-b8dcfafb18a9a9197426b3524431b354.mesh", "res://.import/Kit_Window_Upper_Straight.obj-b8dcfafb18a9a9197426b3524431b354.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Roof_Straight_Side.obj-fca36c674ce33b98b1a7fe883b29305e.mesh"
+
+[deps]
+
+files=[ "res://.import/Roof_Straight_Side.obj-fca36c674ce33b98b1a7fe883b29305e.mesh" ]
+
+source_file="res://Assets/Modular Village/Roof_Straight_Side.obj"
+dest_files=[ "res://.import/Roof_Straight_Side.obj-fca36c674ce33b98b1a7fe883b29305e.mesh", "res://.import/Roof_Straight_Side.obj-fca36c674ce33b98b1a7fe883b29305e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
